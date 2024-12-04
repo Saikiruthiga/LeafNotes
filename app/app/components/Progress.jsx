@@ -107,7 +107,14 @@ const Progress = ({ progress = 0 }) => {
               ✨
             </span>
           ) : (
-            `${Math.round(progress)}%`
+            <span
+              style={{
+                color: "#000",
+                fontWeight: "bold",
+              }}
+            >
+              {`${Math.round(progress)}%`}
+            </span>
           )}
         </Typography>
       </Box>
